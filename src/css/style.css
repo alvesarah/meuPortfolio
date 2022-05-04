@@ -1,0 +1,329 @@
+header{
+    background-color: var(--body);
+
+    display: flex;
+    justify-content: flex-end;
+
+    padding: 20px 50px;
+}
+
+.menu{
+    font-size: 40px;
+    cursor: pointer;
+    color: var(--text);
+}
+
+.euDados{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+
+    padding: 100px 150px 0 150px;
+
+    color: var(--text);
+    background-color: var(--body);
+}
+
+.euAnimada{
+    background-color: #FFFFFF;
+    width: 300px;
+    border-radius: 500px;
+}
+
+img{
+    width: 300px;
+}
+
+.dadosPessoais{
+    width: 60%;
+    min-height: 50vh;
+
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.blocoUm{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 80%;
+}
+
+.nomeGithub{
+    width: 30%;
+
+    font-size: 46px;
+}
+
+.linhaUm{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 45%;
+}
+
+.envMsg{
+    background-color: var(--rosaClaro);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.btnEnvMsg{
+    color: black;
+    font-size: 18px;
+
+    font-weight: 700;
+}
+
+.iconeFollow{
+    padding: 15px;
+    border-radius: 10px;
+    
+    background-color: var(--rosaClaro);
+
+    cursor: pointer;
+}
+
+.userFollow{
+    font-size: 25px;
+
+    color: black;
+}
+
+.trocaTema{
+    font-size: 40px;
+    cursor: pointer;
+    color: var(--text);
+}
+
+.quantProjetos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 30px 0;
+    
+    width: 80%;
+}
+
+p{
+    font-size: 24px;
+}
+
+.funcao{
+    display: flex;
+    flex-direction: column;
+}
+
+h3{
+    margin: 10px 0;
+
+    font-size: 24px;
+}
+
+.linksRedesSociais{
+    margin: 30px 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 30%;
+}
+
+article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.backgroundIconRedesSociais{
+    background-color: var(--rosaClaro);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 35px;
+    height: 35px;
+
+    border-radius: 500px;
+}
+
+.icon{
+    font-size: 25px;
+    cursor: pointer;
+    color: black;
+}
+
+.textoLink{
+    font-size: 18px;
+}
+
+.sobreMim{
+    display: flex;
+    flex-direction: column;
+}
+
+.textoSobreMim{
+    margin: 10px 0;
+}
+
+.stories{
+    background-color: var(--rosaClaro);
+}
+
+.onda{
+    min-width: 100vw;
+}
+
+.hobbiesStories{
+    background-color: var(--rosaClaro);
+    
+    min-height: 10vh;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.articleStories{
+    margin: 30px;
+}
+
+.compStorie{
+    height: 50px;
+    width: 50px;
+    border-radius: 500px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.claro{
+    background-color: var(--cinza);
+}
+
+.escuro{
+    background-color: var(--rosaEscuro);
+}
+
+.articleStories > p{
+    margin-top: 20px;
+}
+
+.publicacoes{
+    min-height: 100vh;
+    width: 100%;
+
+    background-color: var(--rosaClaro);
+}
+
+.topicos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo{
+    text-align: center;
+
+    font-weight: 700;
+
+    margin-top: 30px;
+}
+
+.link{
+    margin: 50px 50px 50px 10px;
+    border: none;
+    
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 24px;
+
+    background-color: var(--rosaClaro);
+
+    cursor: pointer;
+}
+
+.link:active, .link:focus, .link:hover {
+    border-top: 2px solid black; 
+}
+
+.gridProjetos{
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    text-align: center;
+}
+
+.projeto{
+    width: 400px;
+    height: 300px;
+
+    margin: 30px;
+}
+
+.displayProjetos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.displayHabilidades{
+    display: none;
+} 
+
+.habilidade{
+    width: 400px;
+    height: 400px;
+
+    background-color: var(--rosaEscuro);
+
+    margin: 30px;
+}
+
+.colunasFerramentas, .colunasHabilidades{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container{
+    width: 170px;
+    height: 80px;
+    background-color: var(--rosaEscuro);
+
+    font-size: 20px;
+    color: #FFFFFF;
+
+    margin: 60px;
+
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.vercel, .insomnia, .vscode, .iconGithub, .figma, .heroku, .canva, .bootstrap, .react, .node, .mysql, .html, .css, .js, .php, .mongodb{
+    width: 30px;
+    height: 30px;
+
+    margin-right: 10px;
+}
+
+.publicacaoInst{
+    width: 400px;
+
+    margin: 30px;
+}
+
+.btnProjeto{
+    font-size: 24px;
+    color: black;
+}
