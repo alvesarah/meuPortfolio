@@ -8,7 +8,7 @@ header{
 }
 
 .menu{
-    font-size: 40px;
+    font-size: 30px;
     cursor: pointer;
     color: var(--text);
 }
@@ -18,7 +18,7 @@ header{
     justify-content: space-around;
     align-items: flex-start;
 
-    padding: 100px 150px 0 150px;
+    padding: 40px 60px 0 60px;
 
     color: var(--text);
     background-color: var(--body);
@@ -26,12 +26,12 @@ header{
 
 .euAnimada{
     background-color: #FFFFFF;
-    width: 300px;
+    width: 200px;
     border-radius: 500px;
 }
 
 img{
-    width: 300px;
+    width: 200px;
 }
 
 .dadosPessoais{
@@ -41,6 +41,8 @@ img{
     display: flex;
     justify-content: space-around;
     flex-direction: column;
+
+    overflow-y: hidden;
 }
 
 .blocoUm{
@@ -54,7 +56,7 @@ img{
 .nomeGithub{
     width: 30%;
 
-    font-size: 46px;
+    font-size: 35px;
 }
 
 .linhaUm{
@@ -67,19 +69,19 @@ img{
 
 .envMsg{
     background-color: var(--rosaClaro);
-    padding: 20px;
+    padding: 12px;
     border-radius: 10px;
 }
 
 .btnEnvMsg{
     color: black;
-    font-size: 18px;
+    /* font-size: 16px; */
 
     font-weight: 700;
 }
 
 .iconeFollow{
-    padding: 15px;
+    padding: 12px;
     border-radius: 10px;
     
     background-color: var(--rosaClaro);
@@ -88,13 +90,13 @@ img{
 }
 
 .userFollow{
-    font-size: 25px;
+    font-size: 15px;
 
     color: black;
 }
 
 .trocaTema{
-    font-size: 40px;
+    font-size: 30px;
     cursor: pointer;
     color: var(--text);
 }
@@ -110,7 +112,7 @@ img{
 }
 
 p{
-    font-size: 24px;
+    font-size: 18px;
 }
 
 .funcao{
@@ -134,7 +136,7 @@ h3{
     width: 30%;
 }
 
-article{
+a{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -160,7 +162,7 @@ article{
 }
 
 .textoLink{
-    font-size: 18px;
+    font-size: 14px;
 }
 
 .sobreMim{
@@ -189,6 +191,8 @@ article{
     display: flex;
     justify-content: center;
     align-items: center;
+
+    overflow-y: hidden;
 }
 
 .articleStories{
@@ -259,13 +263,25 @@ article{
     display: grid;
     grid-template-columns: repeat(3, 3fr);
     text-align: center;
+
+    overflow-y: hidden;
+}
+
+.publicacaoInst > a{
+    overflow-y: hidden;
 }
 
 .projeto{
-    width: 400px;
-    height: 300px;
+    width: 300px;
+    height: 200px;
 
     margin: 30px;
+
+    cursor: pointer;
+}
+
+.projeto:hover{
+    animation: rotate-90 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 .displayProjetos{
@@ -293,12 +309,16 @@ article{
     align-items: center;
 }
 
+.titulo > p{
+    font-size: 22px;
+}
+
 .container{
-    width: 170px;
-    height: 80px;
+    width: 130px;
+    min-height: 50px;
     background-color: var(--rosaEscuro);
 
-    font-size: 20px;
+    font-size: 18px;
     color: #FFFFFF;
 
     margin: 60px;
@@ -308,6 +328,12 @@ article{
     display: flex;
     align-items: center;
     justify-content: center;
+
+    transition: 1s;
+}
+
+.container:hover{
+    transform: scale(1.2);
 }
 
 .vercel, .insomnia, .vscode, .iconGithub, .figma, .heroku, .canva, .bootstrap, .react, .node, .mysql, .html, .css, .js, .php, .mongodb{
@@ -321,9 +347,53 @@ article{
     width: 400px;
 
     margin: 30px;
+    padding: 30px;
 }
 
 .btnProjeto{
     font-size: 24px;
     color: black;
+}
+
+
+@keyframes rotate-90{
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(15deg);
+    }
+}
+
+/* ANIMAÇÃO */
+[data-anime] {
+    opacity: 0;
+    transition: .8s;
+}
+
+[data-anime="left"] {
+    transform: translate3d(-50px, 0, 0);
+}
+
+[data-anime="leftDados"] {
+    transform: translate3d(-50px, 0, 0);
+    transition: 3s;
+}
+
+[data-anime="right"] {
+    transform: translate3d(50px, 0, 0);
+}
+
+[data-anime="bottom"] {
+    transform: translate3d(0, 50px, 0);
+}
+
+[data-anime="bottomDados"] {
+    transform: translate3d(0, 50px, 0);
+    transition: 3s;
+}
+
+[data-anime].animate{
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
 }
