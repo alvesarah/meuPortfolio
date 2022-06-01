@@ -30,7 +30,6 @@ btnProjetos.addEventListener("click", () =>{
 
 btnHabilidades.addEventListener("click", () =>{
     habilidades.style.display = "flex";
-    habilidades.style.justifyContent = "center";
     projetos.style.display = "none";
 });
 
