@@ -249,6 +249,7 @@ a{
     font-weight: 400;
     text-transform: uppercase;
     font-size: 18px;
+    color: black;
 
     background-color: var(--rosaClaro);
 
